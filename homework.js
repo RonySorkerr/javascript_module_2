@@ -84,4 +84,21 @@ else{
 }
 
 result =  num1 > num2 ? num1 * 2 : result;
-console.log(result);
+console.log('ternary result: ' , result);
+
+// ticket fee calculator
+const age =  20;
+const student = true;
+const price = 800;
+if(age <= 10){
+    console.log('You can go free');
+}
+else if(!student){
+    console.log(price / 2);
+}
+else if(age <= 60){
+    console.log(price * 15 / 100);
+}
+else{
+    console.log('Your ticket price is : ' , price);
+}
