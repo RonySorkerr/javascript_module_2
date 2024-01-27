@@ -27,12 +27,25 @@
 // // makign the upper code ternary
 // price = isLeader === true ? 0 : price + 100;
 
-price = 1200;
+price = 1100;
 Premium = true;
 
 if(Premium === true){
-    price = price / 2;
+    if(price > 1100){
+        price = price / 2;
+        console.log(price);
+    }
+    else{
+        price = price / 4;
+        console.log('Hey Premium Customer, Your price is : ', price)
+    }
 }
 else{
-    price = 0;
+    price = price;
+    console.log("your bill is :" , price = price)
 }
+
+// ternary 
+
+price = Premium === true ? price / 2 : price;
+console.log('Your bill isss :', price);
